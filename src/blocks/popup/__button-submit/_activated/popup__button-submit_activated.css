@@ -1,0 +1,11 @@
+.popup__button-submit_activated{
+  background-color: black;
+  color: white;
+  border: 0;
+  transition: opacity 0.5s ease-out;
+  cursor: pointer;
+}
+
+.popup__button-submit_activated:hover{
+  opacity: 0.8;
+}

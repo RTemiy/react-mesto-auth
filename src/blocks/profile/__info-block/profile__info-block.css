@@ -1,0 +1,10 @@
+.profile__info-block{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 740px) {
+  .profile__info-block{
+    justify-content: center;
+  }
+}

@@ -1,0 +1,16 @@
+.footer__text{
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer__text {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer__text {
+    padding-left: 19px;
+  }
+}
