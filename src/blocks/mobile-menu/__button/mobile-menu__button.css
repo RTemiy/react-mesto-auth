@@ -1,0 +1,11 @@
+.mobile-menu__button{
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+
+.mobile-menu__button:hover {
+  opacity: 0.6;
+}

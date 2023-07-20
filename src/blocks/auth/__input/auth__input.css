@@ -1,0 +1,24 @@
+.auth__input{
+  color: white;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #CCCCCC solid;
+  padding: 0 0 13px 0;
+}
+
+.auth__input:last-of-type{
+  margin-top: 30px;
+}
+
+.auth__input:focus{
+  outline: 0;
+}
+
+.auth__input::placeholder{
+  color: #CCCCCC;
+}
+
+.auth__input:-webkit-autofill{
+  -webkit-text-fill-color: #ffffff;
+  box-shadow: inset 0 0 20px 20px #000000;
+}

@@ -1,0 +1,13 @@
+.header__mail{
+  color: white;
+  text-decoration: none;
+  padding: 0 24px 0 0;
+  margin: 0;
+  text-align: right;
+}
+
+@media (max-width: 420px) {
+  .header__mail{
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.header__button{
+  border: 0;
+  background-color: transparent;
+  color: white;
+  margin: 0 ;
+  padding: 0;
+  color: rgba(169, 169, 169, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 740px) {
+  .header__button{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__button{
+    display: none;
+  }
+}
