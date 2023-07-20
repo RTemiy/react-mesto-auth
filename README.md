@@ -1,4 +1,4 @@
-# [Проектная работа "Место-React"](https://rtemiy.github.io/mesto-react/)
+# [Проектная работа "Место-React"](https://rtemiy.github.io/react-mesto-auth/)
 ### Проект курса ["Веб-разработчик"](https://praktikum.yandex.ru/web/) на платформе ["Яндекс.Практикум"](https://practicum.yandex.ru/)
 ### Описание
 - Сайт социальная сеть с возможностью выкладывать фотографии и редактировать профиль
@@ -9,8 +9,9 @@
 - Файловая структура Nested
 - CSS Анимации
 - CSS Forms
-- React (функциональный стиль: useState, useEffect, useContext, refs, controlled inputs)
+- React (функциональный стиль: useState, useEffect, useContext, refs, controlled inputs, Routes, ProtectedRoute, Navigate,)
 - Обработка GET, PUT, DELETE запросов
+- REST API
 ### Планы на доработку
 - Разные профили
 - Переключение языка

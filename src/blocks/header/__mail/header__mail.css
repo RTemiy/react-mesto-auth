@@ -6,7 +6,7 @@
   text-align: right;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 740px) {
   .header__mail{
     display: none;
   }

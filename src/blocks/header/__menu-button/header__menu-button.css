@@ -8,7 +8,7 @@
   opacity: 0.6;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 740px) {
   .header__menu-button{
     display: block;
     background-image: url("../../../images/menu.svg");

@@ -1,3 +1,5 @@
 .header__menu-button_cross{
   background-image: url("../../../../images/cross.svg");
+  width: 20px;
+  height: 20px;
 }

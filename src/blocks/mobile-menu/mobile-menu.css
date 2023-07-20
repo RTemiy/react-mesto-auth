@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 741px) {
   .mobile-menu{
     display: none;
   }
