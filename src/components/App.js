@@ -14,6 +14,7 @@ import Register from "./Register";
 import InfoTooltip from "./InfoTooltip";
 import {getContent} from "../utils/auth";
 import MobileMenu from "./Mobile-Menu";
+import ProtectedRoute from "./ProtectedRoute";
 
 export default function App() {
 
@@ -172,22 +173,18 @@ export default function App() {
       <Routes>
         <Route
           path="/"
-          element={loggedIn
-              ? <Main
-                loggedIn={loggedIn}
-                cards={cards}
-                onCardDelete={handleCardDelete}
-                onAddPlace={handleAddPlaceClick}
-                onEditAvatar={handleEditAvatarClick}
-                onEditProfile={handleEditProfileClick}
-                onCardClick={handleCardClick}
-                onCardLike={handleCardLike}
-            />
-              : <Navigate
-              to="/sign-in"
-              replace
-            />
-          }/>
+          element={
+          <ProtectedRoute
+            element={Main}
+            loggedIn={loggedIn}
+            cards={cards}
+            onCardDelete={handleCardDelete}
+            onAddPlace={handleAddPlaceClick}
+            onEditAvatar={handleEditAvatarClick}
+            onEditProfile={handleEditProfileClick}
+            onCardClick={handleCardClick}
+            onCardLike={handleCardLike}/>}
+        />
         <Route path="/sign-up" element={<Register onRegister={handleRegister}/>} />
         <Route path="/sign-in" element={<Login handleLogin={handleLogin}/>}/>
         </Routes>
