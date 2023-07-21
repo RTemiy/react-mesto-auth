@@ -38,7 +38,7 @@ class Api {
       body: JSON.stringify({
         avatar : avatar,
       })
-    })
+    }).then(res => this._waitResponse(res))
   }
 
   postCard({name,link}){

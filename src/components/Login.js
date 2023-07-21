@@ -25,7 +25,7 @@ export default function Login ({handleLogin}) {
     authorize(formValue.email, formValue.password)
       .then(data => {
           setFormValue({email: '', password: ''});
-          handleLogin();
+          handleLogin(data.token);
       })
       .catch(err => console.log(err));
   }

@@ -27,10 +27,34 @@ export default function AddPlacePopup({isOpen, onClose, onAddCard}) {
   }, [isOpen]);
 
   return(
-    <PopupWithForm name='add-place' buttonText='Создать' isOpen={isOpen} onClose={onClose} onSubmit={handleSubmit} title='Новое место'>
-      <input placeholder="Название" id="form_place-name" onChange={handleChangeName} required minLength="2" value={name} maxLength="30" name="name" className="popup__input"/>
+    <PopupWithForm
+      name='add-place'
+      buttonText='Создать'
+      isOpen={isOpen}
+      onClose={onClose}
+      onSubmit={handleSubmit}
+      title='Новое место'>
+      <input
+        placeholder="Название"
+        id="form_place-name"
+        onChange={handleChangeName}
+        required
+        minLength="2"
+        value={name}
+        maxLength="30"
+        name="name"
+        className="popup__input"
+      />
       <span id="form_place-name-error" className="popup__span"></span>
-      <input placeholder="Ссылка на картинку" required type="url" onChange={handleChangeLink} id="form_place-link" value={link} name="link" className="popup__input"/>
+      <input
+        placeholder="Ссылка на картинку"
+        required
+        type="url"
+        onChange={handleChangeLink}
+        id="form_place-link"
+        value={link} name="link"
+        className="popup__input"
+      />
       <span id="form_place-link-error" className="popup__span"></span>
     </PopupWithForm>
   )

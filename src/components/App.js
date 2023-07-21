@@ -2,7 +2,7 @@ import Header from './Header'
 import Main from "./Main";
 import Footer from "./Footer";
 import React, {useState} from "react";
-import {Routes, Route, Navigate, useNavigate} from 'react-router-dom';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import ImagePopup from "./ImagePopup";
 import {api} from "../utils/api";
 import {CurrentUserContext} from "../contexts/CurrentUserContext";
@@ -125,12 +125,11 @@ export default function App() {
   }
 
   function handleUpdateAvatar(data) {
-    api.sendUserAvatar(data).then(res=>{
-      res.json().then(r=>{
+    api.sendUserAvatar(data).then(r=>{
         setCurrentUser(r);
         closeAllPopups();
       })
-    }).catch(err=>{
+    .catch(err=>{
       console.log(err);
     })
   }
@@ -144,8 +143,14 @@ export default function App() {
     })
   }
 
-  function handleLogin() {
-    tokenCheck();
+  function handleLogin(token) {
+    getContent(token).then((res) => {
+      if (res){
+        setLoggedIn(true);
+        setEmail(res.data.email)
+        navigate("/", {replace: true})
+      }
+    });
   }
 
   function handleRegister(status) {
