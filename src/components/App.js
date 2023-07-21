@@ -143,14 +143,10 @@ export default function App() {
     })
   }
 
-  function handleLogin(token) {
-    getContent(token).then((res) => {
-      if (res){
+  function handleLogin(email) {
         setLoggedIn(true);
-        setEmail(res.data.email)
-        navigate("/", {replace: true})
-      }
-    });
+        setEmail(email)
+        navigate("/", {replace: true});
   }
 
   function handleRegister(status) {
